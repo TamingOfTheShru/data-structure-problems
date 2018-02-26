@@ -1,4 +1,4 @@
-/*// C++ program to remove duplicates in-place
+// C++ program to remove duplicates in-place
 #include<iostream>
 using namespace std;
 
@@ -32,15 +32,5 @@ int main()
 
 	return 0;
 }
-*/
 
 
-int i = 1;
-int j = 1;
-
-int k = i++; // post increment
-int l = ++j; // pre increment
-
-std::cout << k; // prints 1
-std::cout << l;
-std::cout << k;
