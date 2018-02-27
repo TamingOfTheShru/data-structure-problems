@@ -1,3 +1,8 @@
+/**
+ * Given a sorted array, remove the duplicates in-place such that each element appear
+ * only once and return the new length.
+ */
+
 "use strict"
 var nums = [1, 1, 2, 2, 3];
 
@@ -26,7 +31,7 @@ function removeDuplicateElements(nums) {
 			newNums.push(nums[i]);
 		}
 	}
-	console.log("new array: ",newNums)
+	console.log("new array: ", newNums)
 	return newNums;
 };
 
