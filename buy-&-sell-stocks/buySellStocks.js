@@ -13,9 +13,9 @@ function maximizeStockProfit(stocks) {
 	for (var i = 0; i < stocks.length; i++) {
 		if (stocks[i] < stocks[i + 1]) {
 			profit = stocks[i + 1] - stocks[i];
-			if(maxProfit < profit){
-				maxProfit = profit;
-			}	
+			if (maxProfit < profit) {
+				maxProfit = maxProfit + profit;
+			}
 		}
 	}
 	console.log(maxProfit);
