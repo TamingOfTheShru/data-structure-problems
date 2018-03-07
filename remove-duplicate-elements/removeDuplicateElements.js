@@ -9,11 +9,10 @@ var nums = [1, 1, 2, 2, 3];
 function removeDuplicates(nums) {
 	if (nums === null || nums.length === 0) return 0;
 	if (nums.length == 1) return 1;
-	var count = 0,
-		newNums = [];
+
+	var newNums = [];
 	for (var i = 0; i < nums.length; i++) {
 		if (nums[i] != nums[i + 1]) {
-			count++;
 			newNums.push(nums[i]);
 		}
 	}
