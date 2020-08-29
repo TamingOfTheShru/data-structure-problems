@@ -1,1 +1,1 @@
-Data structure problems of the wild implemented using C++ and Javascript
+Data structure problems of the wild implemented using Python or Javascript
