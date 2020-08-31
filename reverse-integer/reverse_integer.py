@@ -17,3 +17,12 @@ class Solution:
         else:
             return 0
         
+        
+# Bonus: Determine whether an integer is a palindrome.
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        int_1 = str(x)
+        if(int_1[::-1] == int_1):
+            return True
+        else:
+            return False
