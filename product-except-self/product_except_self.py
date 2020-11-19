@@ -6,7 +6,7 @@
 # Input:  [1,2,3,4]
 # Output: [24,12,8,6]
 
-
+# Approach 1
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         if len(nums) is 1:
@@ -28,4 +28,24 @@ class Solution:
         print(right)
         for i in range(len(nums)):  
             prod[i] = left[i] * right[i]
+        return prod
+
+# Approach 2   
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        if len(nums) is 1:
+            return nums
+        
+        n = len(nums)
+        i, temp = 1, 1
+        prod = [1 for i in range(n)] 
+        for i in range(n): 
+            prod[i] = temp 
+            temp *= nums[i]
+        
+        temp = 1
+        for i in range(n - 1, -1, -1): 
+            prod[i] *= temp 
+            temp *= nums[i]
+            
         return prod
