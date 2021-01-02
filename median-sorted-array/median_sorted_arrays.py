@@ -20,9 +20,9 @@ class Solution:
     # There are following two cases 
     # if n+m is odd then the middle 
     # index is median i.e. (m+n)/2 
-        if m == 0:
+        if m == 0 and n ==1:
             return ar2[0]
-        elif n == 0: 
+        elif n == 0 and m==1: 
             return ar1[0]
         else:
             if (m + n) % 2 == 1:
